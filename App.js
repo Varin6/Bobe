@@ -124,7 +124,6 @@ export default class App extends Component<props> {
 
 
 
-
     render() {
 
         // console.log(this.state);

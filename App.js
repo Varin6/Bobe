@@ -103,6 +103,7 @@ export default class App extends Component<props> {
                     style={[styles.textinput, {marginBottom: 45}]}
                     defaultValue={this.state.password}
                     onChangeText={(password) => this.setState({password: password})}
+                    secureTextEntry={true}
                 />
 
                 <Button style={styles.button} title={"Login"} onPress={this.buttonPressed}/>
@@ -127,8 +128,8 @@ const styles = StyleSheet.create({
         alignItems: 'stretch',
         backgroundColor: '#eeeeee',
         opacity: 1,
-        paddingLeft:  10,
-        paddingRight: 10
+        paddingLeft:  20,
+        paddingRight: 20
 
     },
     textinput: {
